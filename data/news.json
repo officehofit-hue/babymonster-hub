@@ -1,0 +1,137 @@
+{
+    "last_updated": "2026-04-07T10:00:00Z",
+    "trending": "Welcome to BABYMONSTER Hub! Daily auto-updates coming soon via GitHub Actions.",
+    "articles": [
+        {
+            "source": "YouTube",
+            "title": "BABYMONSTER - 'FOREVER' M/V",
+            "summary": "BABYMONSTER's official music video for 'FOREVER' continues to break records, showcasing the group's powerful choreography and vocal prowess. The video features stunning visuals and has captivated fans worldwide with its energetic performance.",
+            "date": "April 7, 2026",
+            "members": ["Group"],
+            "image": "",
+            "url": "https://www.youtube.com/@BABYMONSTER_"
+        },
+        {
+            "source": "Instagram",
+            "title": "BABYMONSTER Official Instagram Update — New Group Photo",
+            "summary": "BABYMONSTER shared a stunning new group photo on their official Instagram, showing all seven members in coordinated outfits. Fans flooded the comments with love and excitement for the group's latest visual concept.",
+            "date": "April 7, 2026",
+            "members": ["Group"],
+            "image": "",
+            "url": "https://www.instagram.com/babymonster_yg/"
+        },
+        {
+            "source": "X / Twitter",
+            "title": "BABYMONSTER Trends Worldwide After Fan Meeting Announcement",
+            "summary": "BABYMONSTER's official X account announced an upcoming global fan meeting tour, sending the hashtag #BABYMONSTER_FANMEETING trending in over 30 countries. MONSTIEZ worldwide are already preparing for ticket sales.",
+            "date": "April 6, 2026",
+            "members": ["Group"],
+            "image": "",
+            "url": "https://x.com/YGBABYMONSTER_"
+        },
+        {
+            "source": "Weverse",
+            "title": "Ahyeon Shares Handwritten Letter to Fans on Weverse",
+            "summary": "Ahyeon posted a heartfelt handwritten letter on Weverse expressing her gratitude to MONSTIEZ for their unwavering support. The letter quickly became the most-liked post on the platform this week, with fans sharing translations in multiple languages.",
+            "date": "April 6, 2026",
+            "members": ["Ahyeon"],
+            "image": "",
+            "url": "https://weverse.io/babymonster"
+        },
+        {
+            "source": "TikTok",
+            "title": "Pharita's Dance Challenge Hits 50M Views on TikTok",
+            "summary": "Pharita launched a new dance challenge on TikTok featuring choreography from BABYMONSTER's latest track. The challenge has gone viral with celebrities, influencers, and fans worldwide participating, collectively reaching over 50 million views.",
+            "date": "April 5, 2026",
+            "members": ["Pharita"],
+            "image": "",
+            "url": "https://www.tiktok.com/@babymonster_yg"
+        },
+        {
+            "source": "Article",
+            "title": "Billboard: BABYMONSTER Continues Global Chart Domination",
+            "summary": "Billboard reports that BABYMONSTER's latest single has entered multiple global charts simultaneously, solidifying the group's position as one of K-pop's fastest-rising acts. Industry analysts highlight the group's strong international fanbase as a key driver.",
+            "date": "April 5, 2026",
+            "members": ["Group"],
+            "image": "",
+            "url": ""
+        },
+        {
+            "source": "Instagram",
+            "title": "Ruka Shows Off New Hair Color in Instagram Story",
+            "summary": "Ruka revealed a striking new hair color through a series of Instagram stories, sparking excitement and speculation among fans about a potential new concept or comeback. The stories received millions of views within hours.",
+            "date": "April 4, 2026",
+            "members": ["Ruka"],
+            "image": "",
+            "url": "https://www.instagram.com/babymonster_yg/"
+        },
+        {
+            "source": "YouTube",
+            "title": "BABYMONSTER - Behind the Scenes of Latest Photoshoot",
+            "summary": "A new behind-the-scenes video on BABYMONSTER's YouTube channel gives fans an inside look at the group's recent magazine photoshoot. The members share fun moments, bloopers, and insights into their creative process.",
+            "date": "April 4, 2026",
+            "members": ["Group"],
+            "image": "",
+            "url": "https://www.youtube.com/@BABYMONSTER_"
+        },
+        {
+            "source": "Weverse",
+            "title": "Haram Covers a Classic Ballad — Fans Are Emotional",
+            "summary": "Main vocalist Haram shared a stunning vocal cover on Weverse, performing a beloved classic ballad that left fans in tears. Her powerful vocals and emotional delivery were praised across social media platforms.",
+            "date": "April 3, 2026",
+            "members": ["Haram"],
+            "image": "",
+            "url": "https://weverse.io/babymonster"
+        },
+        {
+            "source": "Article",
+            "title": "Rora Named Among Forbes 30 Under 30 Asia — Entertainment",
+            "summary": "Rora has been recognized by Forbes on their prestigious 30 Under 30 Asia list in the Entertainment category, making her one of the youngest artists to receive this honor. The recognition highlights her impact on the global entertainment scene.",
+            "date": "April 3, 2026",
+            "members": ["Rora"],
+            "image": "",
+            "url": ""
+        }
+    ],
+    "quick_updates": [
+        {
+            "who": "Rora",
+            "what": "liked a fan's artwork on Weverse",
+            "when": "2 hours ago"
+        },
+        {
+            "who": "BABYMONSTER",
+            "what": "updated their official Spotify playlist",
+            "when": "5 hours ago"
+        },
+        {
+            "who": "Haram",
+            "what": "posted a new story on Instagram",
+            "when": "8 hours ago"
+        },
+        {
+            "who": "Chiquita",
+            "what": "went live on Weverse for 30 minutes",
+            "when": "12 hours ago"
+        },
+        {
+            "who": "Asa",
+            "what": "shared a cover snippet on YouTube community",
+            "when": "1 day ago"
+        }
+    ],
+    "gallery": [
+        { "image": "", "caption": "Group Photo — Comeback Concept", "member": "group" },
+        { "image": "", "caption": "Ruka — Solo Shoot", "member": "ruka" },
+        { "image": "", "caption": "Pharita — Thai Magazine", "member": "pharita" },
+        { "image": "", "caption": "Asa — Performance", "member": "asa" },
+        { "image": "", "caption": "Haram — Vocal Stage", "member": "haram" },
+        { "image": "", "caption": "Rora — Fashion Event", "member": "rora" },
+        { "image": "", "caption": "Chiquita — Dance Practice", "member": "chiquita" },
+        { "image": "", "caption": "Ahyeon — Center Focus", "member": "ahyeon" },
+        { "image": "", "caption": "Group — Concert", "member": "group" },
+        { "image": "", "caption": "Group — Behind the Scenes", "member": "group" },
+        { "image": "", "caption": "Ruka & Asa — Japan Event", "member": "ruka" },
+        { "image": "", "caption": "Pharita & Chiquita — Duo Stage", "member": "pharita" }
+    ]
+}

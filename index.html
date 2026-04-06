@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABYMONSTER Hub — Daily Updates</title>
+    <meta name="description" content="Your daily source for everything BABYMONSTER — news, updates, photos, and more from all platforms.">
+    <meta property="og:title" content="BABYMONSTER Hub — Daily Updates">
+    <meta property="og:description" content="Daily aggregated news and updates about BABYMONSTER from YouTube, Instagram, X, TikTok, Weverse and more.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- TRENDING BANNER -->
+    <div class="trending-banner" id="trending-banner">
+        <div class="pulse"></div>
+        <span id="trending-text">Loading latest trending news...</span>
+        <div class="pulse"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="nav-wrapper">
+        <nav class="nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Babymonster_Logo.svg" alt="BABYMONSTER" class="logo-img">
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Babymonster_Logo.svg" alt="BABYMONSTER">
+        </div>
+        <p class="subtitle">Your Daily Source for Everything BABYMONSTER</p>
+        <div class="hero-divider"></div>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <span class="hero-stat-number" id="stat-articles">0</span>
+                <span class="hero-stat-label">Articles Today</span>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-number">7</span>
+                <span class="hero-stat-label">Members</span>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-number">8+</span>
+                <span class="hero-stat-label">Sources Tracked</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="news">
+
+        <!-- NEWS FEED -->
+        <section class="news-feed">
+            <div class="section-title">
+                <div class="dot"></div>
+                Latest Updates
+                <div class="line"></div>
+                <div class="last-updated" id="last-updated"></div>
+            </div>
+
+            <!-- Filter bar -->
+            <div class="news-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="youtube">YouTube</button>
+                <button class="filter-btn" data-filter="instagram">Instagram</button>
+                <button class="filter-btn" data-filter="twitter">X / Twitter</button>
+                <button class="filter-btn" data-filter="tiktok">TikTok</button>
+                <button class="filter-btn" data-filter="weverse">Weverse</button>
+                <button class="filter-btn" data-filter="article">Articles</button>
+            </div>
+
+            <!-- News cards container - populated by JS -->
+            <div id="news-container">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading latest updates...</p>
+                </div>
+            </div>
+
+            <button class="load-more-btn" id="load-more" style="display:none;">Load More Updates</button>
+        </section>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <!-- Members -->
+            <div class="sidebar-widget">
+                <h4>Members</h4>
+                <div class="member-list">
+                    <a href="#member-ruka" class="member-item">
+                        <div class="member-avatar">R</div>
+                        <div class="member-info">
+                            <div class="member-name">Ruka</div>
+                            <div class="member-role">Rapper, Dancer</div>
+                        </div>
+                    </a>
+                    <a href="#member-pharita" class="member-item">
+                        <div class="member-avatar">P</div>
+                        <div class="member-info">
+                            <div class="member-name">Pharita</div>
+                            <div class="member-role">Vocalist, Dancer</div>
+                        </div>
+                    </a>
+                    <a href="#member-asa" class="member-item">
+                        <div class="member-avatar">A</div>
+                        <div class="member-info">
+                            <div class="member-name">Asa</div>
+                            <div class="member-role">Vocalist</div>
+                        </div>
+                    </a>
+                    <a href="#member-haram" class="member-item">
+                        <div class="member-avatar">H</div>
+                        <div class="member-info">
+                            <div class="member-name">Haram</div>
+                            <div class="member-role">Main Vocalist</div>
+                        </div>
+                    </a>
+                    <a href="#member-rora" class="member-item">
+                        <div class="member-avatar">R</div>
+                        <div class="member-info">
+                            <div class="member-name">Rora</div>
+                            <div class="member-role">Vocalist, Dancer</div>
+                        </div>
+                    </a>
+                    <a href="#member-chiquita" class="member-item">
+                        <div class="member-avatar">C</div>
+                        <div class="member-info">
+                            <div class="member-name">Chiquita</div>
+                            <div class="member-role">Rapper, Dancer</div>
+                        </div>
+                    </a>
+                    <a href="#member-ahyeon" class="member-item">
+                        <div class="member-avatar">A</div>
+                        <div class="member-info">
+                            <div class="member-name">Ahyeon</div>
+                            <div class="member-role">Main Vocalist, Center</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Official Links -->
+            <div class="sidebar-widget">
+                <h4>Official Links</h4>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@BABYMONSTER_" target="_blank" rel="noopener" class="social-link sl-youtube">&#9654; YouTube</a>
+                    <a href="https://www.instagram.com/babymonster_yg/" target="_blank" rel="noopener" class="social-link sl-instagram">&#10022; Instagram</a>
+                    <a href="https://x.com/YGBABYMONSTER_" target="_blank" rel="noopener" class="social-link sl-twitter">&#120143; X / Twitter</a>
+                    <a href="https://www.tiktok.com/@babymonster_yg" target="_blank" rel="noopener" class="social-link sl-tiktok">&#9835; TikTok</a>
+                    <a href="https://weverse.io/babymonster" target="_blank" rel="noopener" class="social-link sl-weverse">&#9829; Weverse</a>
+                    <a href="https://www.facebook.com/BABYMONSTER.YGOfficial" target="_blank" rel="noopener" class="social-link sl-facebook">f Facebook</a>
+                    <a href="https://open.spotify.com/artist/1SIocsqdEefUTE6XELBCmQ" target="_blank" rel="noopener" class="social-link sl-spotify">&#9835; Spotify</a>
+                    <a href="https://music.apple.com/artist/babymonster/1718498801" target="_blank" rel="noopener" class="social-link sl-apple">&#9835; Apple Music</a>
+                </div>
+            </div>
+
+            <!-- Quick Updates -->
+            <div class="sidebar-widget">
+                <h4>Quick Updates</h4>
+                <div id="quick-updates">
+                    <p class="loading-text">Loading...</p>
+                </div>
+            </div>
+
+        </aside>
+    </main>
+
+    <!-- MEMBERS SECTION -->
+    <section class="members-section" id="members">
+        <div class="section-title">
+            <div class="dot"></div>
+            Meet The Members
+            <div class="line"></div>
+        </div>
+        <div class="members-grid">
+            <div class="member-card" id="member-ruka">
+                <div class="member-photo">
+                    <div class="member-photo-placeholder">RUKA</div>
+                </div>
+                <div class="member-details">
+                    <h4>Ruka</h4>
+                    <div class="role-text">Rapper, Dancer</div>
+                    <div class="member-meta">
+                        <span>&#127471;&#127477; Japanese</span>
+                        <span>Born: Oct 20, 2002</span>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card" id="member-pharita">
+                <div class="member-photo">
+                    <div class="member-photo-placeholder">PHARITA</div>
+                </div>
+                <div class="member-details">
+                    <h4>Pharita</h4>
+                    <div class="role-text">Vocalist, Dancer</div>
+                    <div class="member-meta">
+                        <span>&#127481;&#127469; Thai</span>
+                        <span>Born: Aug 18, 2005</span>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card" id="member-asa">
+                <div class="member-photo">
+                    <div class="member-photo-placeholder">ASA</div>
+                </div>
+                <div class="member-details">
+                    <h4>Asa</h4>
+                    <div class="role-text">Vocalist, Rapper</div>
+                    <div class="member-meta">
+                        <span>&#127471;&#127477; Japanese</span>
+                        <span>Born: Nov 12, 2006</span>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card" id="member-haram">
+                <div class="member-photo">
+                    <div class="member-photo-placeholder">HARAM</div>
+                </div>
+                <div class="member-details">
+                    <h4>Haram</h4>
+                    <div class="role-text">Main Vocalist</div>
+                    <div class="member-meta">
+                        <span>&#127472;&#127479; Korean</span>
+                        <span>Born: Jan 17, 2006</span>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card" id="member-rora">
+                <div class="member-photo">
+                    <div class="member-photo-placeholder">RORA</div>
+                </div>
+                <div class="member-details">
+                    <h4>Rora</h4>
+                    <div class="role-text">Vocalist, Dancer</div>
+                    <div class="member-meta">
+                        <span>&#127472;&#127479; Korean</span>
+                        <span>Born: Aug 14, 2008</span>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card" id="member-chiquita">
+                <div class="member-photo">
+                    <div class="member-photo-placeholder">CHIQUITA</div>
+                </div>
+                <div class="member-details">
+                    <h4>Chiquita</h4>
+                    <div class="role-text">Rapper, Dancer</div>
+                    <div class="member-meta">
+                        <span>&#127481;&#127469; Thai</span>
+                        <span>Born: Aug 17, 2009</span>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card" id="member-ahyeon">
+                <div class="member-photo">
+                    <div class="member-photo-placeholder">AHYEON</div>
+                </div>
+                <div class="member-details">
+                    <h4>Ahyeon</h4>
+                    <div class="role-text">Main Vocalist, Center</div>
+                    <div class="member-meta">
+                        <span>&#127472;&#127479; Korean</span>
+                        <span>Born: Apr 11, 2007</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-title">
+            <div class="dot"></div>
+            Media Gallery
+            <div class="line"></div>
+        </div>
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-gallery-filter="all">All</button>
+            <button class="filter-btn" data-gallery-filter="ruka">Ruka</button>
+            <button class="filter-btn" data-gallery-filter="pharita">Pharita</button>
+            <button class="filter-btn" data-gallery-filter="asa">Asa</button>
+            <button class="filter-btn" data-gallery-filter="haram">Haram</button>
+            <button class="filter-btn" data-gallery-filter="rora">Rora</button>
+            <button class="filter-btn" data-gallery-filter="chiquita">Chiquita</button>
+            <button class="filter-btn" data-gallery-filter="ahyeon">Ahyeon</button>
+        </div>
+        <div class="gallery-grid" id="gallery-grid">
+            <p class="loading-text">Loading gallery...</p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+        <div class="section-title">
+            <div class="dot"></div>
+            About BABYMONSTER
+            <div class="line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p><strong>BABYMONSTER</strong> is a seven-member South Korean girl group formed by YG Entertainment. The group debuted on November 27, 2023, with their single album <em>BABYMONS7ER</em>. The members are <strong>Ruka, Pharita, Asa, Haram, Rora, Chiquita, and Ahyeon</strong>.</p>
+                <p>Known for their powerful performances, exceptional vocal and rap skills, and captivating stage presence, BABYMONSTER has quickly risen to become one of K-pop's most exciting acts. Their music blends hip-hop, pop, and EDM influences with dynamic choreography.</p>
+                <p>This fan site automatically aggregates the latest news and updates from official and fan sources across multiple platforms, updated daily.</p>
+            </div>
+            <div class="about-info">
+                <div class="about-info-row">
+                    <span class="about-label">Debut</span>
+                    <span class="about-value">November 27, 2023</span>
+                </div>
+                <div class="about-info-row">
+                    <span class="about-label">Company</span>
+                    <span class="about-value">YG Entertainment</span>
+                </div>
+                <div class="about-info-row">
+                    <span class="about-label">Fandom</span>
+                    <span class="about-value">MONSTIEZ</span>
+                </div>
+                <div class="about-info-row">
+                    <span class="about-label">Members</span>
+                    <span class="about-value">7</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">BABY<span>MONSTER</span> HUB</div>
+        <p>Your daily source for all things BABYMONSTER</p>
+        <div class="auto-update-badge">
+            <div class="green-dot"></div>
+            Auto-updated daily via GitHub Actions
+        </div>
+        <p class="disclaimer">
+            This is a fan-made website and is not affiliated with YG Entertainment or BABYMONSTER.
+            All content belongs to their respective owners. Built with love by fans, for fans.
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
