@@ -16,7 +16,7 @@ from html import unescape
 # === CONFIG ===
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), '..', 'data', 'news.json')
 
-YOUTUBE_CHANNEL_ID = 'UCalp0m2HzeK_ExBqCDfTsdA'  # BABYMONSTER official
+YOUTUBE_CHANNEL_ID = 'UCqwUnggBBct-AY2lAdI88jQ'  # BABYMONSTER official
 YOUTUBE_RSS = f'https://www.youtube.com/feeds/videos.xml?channel_id={YOUTUBE_CHANNEL_ID}'
 
 MEMBERS = ['Ruka', 'Pharita', 'Asa', 'Haram', 'Rora', 'Chiquita', 'Ahyeon']
