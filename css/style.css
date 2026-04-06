@@ -92,6 +92,7 @@ img { max-width: 100%; height: auto; }
 .logo-img {
     height: 32px;
     width: auto;
+    mix-blend-mode: multiply;
 }
 
 .nav-menu {
@@ -184,7 +185,7 @@ img { max-width: 100%; height: auto; }
     margin-bottom: 16px;
 }
 
-.hero-logo img { width: 100%; height: auto; }
+.hero-logo img { width: 100%; height: auto; mix-blend-mode: multiply; }
 
 .hero .subtitle {
     font-size: 14px;
