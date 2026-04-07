@@ -169,7 +169,7 @@ img { max-width: 100%; height: auto; }
 
 /* === HERO === */
 .hero {
-    padding: 50px 40px 40px;
+    padding: 30px 40px 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,9 +180,9 @@ img { max-width: 100%; height: auto; }
 }
 
 .hero-logo {
-    max-width: 550px;
+    max-width: 280px;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .hero-logo img { width: 100%; height: auto; mix-blend-mode: multiply; }
@@ -434,6 +434,65 @@ img { max-width: 100%; height: auto; }
 .load-more-btn:hover {
     background: var(--red);
     color: var(--white);
+}
+
+/* Countdown Widget */
+.countdown-widget {
+    background: var(--black);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px;
+    color: var(--white);
+    text-align: center;
+}
+
+.countdown-widget h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: var(--red);
+    margin-bottom: 5px;
+}
+
+.countdown-event-name {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.countdown-event-date {
+    font-size: 11px;
+    color: #666;
+    margin-top: 12px;
+}
+
+.countdown-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+}
+
+.countdown-box {
+    background: rgba(227, 25, 55, 0.1);
+    border: 1px solid rgba(227, 25, 55, 0.2);
+    border-radius: 8px;
+    padding: 10px 4px;
+}
+
+.countdown-box .cd-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: var(--white);
+    line-height: 1;
+}
+
+.countdown-box .cd-label {
+    font-size: 9px;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
 }
 
 /* Loading */
@@ -816,7 +875,7 @@ footer p {
         padding: 30px 20px;
     }
     .hero { padding: 35px 20px 30px; }
-    .hero-logo { max-width: 350px; }
+    .hero-logo { max-width: 200px; }
     .hero .subtitle { font-size: 12px; letter-spacing: 3px; }
     .hero-stats { gap: 25px; }
     .hero-stat-number { font-size: 28px; }
@@ -834,7 +893,7 @@ footer p {
 
 @media (max-width: 600px) {
     .members-grid { grid-template-columns: repeat(2, 1fr); }
-    .hero-logo { max-width: 260px; }
+    .hero-logo { max-width: 160px; }
     .hero-stats { flex-wrap: wrap; gap: 20px; }
     .trending-banner { font-size: 11px; padding: 8px 12px; }
     .social-links { grid-template-columns: 1fr; }

@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadNewsData();
     setupNavigation();
     setupFilters();
+    startCountdown();
     setupGalleryFilters();
 });
 
@@ -279,4 +280,44 @@ function formatDate(dateStr) {
     } catch {
         return dateStr;
     }
+}
+
+// === COUNTDOWN TIMER ===
+function startCountdown() {
+    // BABYMONSTER 3rd Mini Album [CHOOM] — May 4, 2026 6:00 PM KST (UTC+9)
+    const targetDate = new Date('2026-05-04T09:00:00Z'); // 6PM KST = 9AM UTC
+
+    function update() {
+        const now = new Date();
+        let diff = targetDate - now;
+
+        if (diff <= 0) {
+            document.querySelector('.countdown-event-name').textContent = 'OUT NOW!';
+            document.getElementById('cd-weeks').textContent = '0';
+            document.getElementById('cd-days').textContent = '0';
+            document.getElementById('cd-hours').textContent = '0';
+            document.getElementById('cd-mins').textContent = '0';
+            document.getElementById('cd-secs').textContent = '0';
+            return;
+        }
+
+        const weeks = Math.floor(diff / (1000 * 60 * 60 * 24 * 7));
+        diff -= weeks * (1000 * 60 * 60 * 24 * 7);
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        diff -= days * (1000 * 60 * 60 * 24);
+        const hours = Math.floor(diff / (1000 * 60 * 60));
+        diff -= hours * (1000 * 60 * 60);
+        const mins = Math.floor(diff / (1000 * 60));
+        diff -= mins * (1000 * 60);
+        const secs = Math.floor(diff / 1000);
+
+        document.getElementById('cd-weeks').textContent = weeks;
+        document.getElementById('cd-days').textContent = days;
+        document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
+        document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
+    }
+
+    update();
+    setInterval(update, 1000);
 }
