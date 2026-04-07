@@ -102,7 +102,7 @@ function buildNewsCard(article) {
     const badgeClass = `badge-${article.source.toLowerCase().replace(/[\s\/]/g, '').replace('x', 'twitter')}`;
     const imageHtml = article.image
         ? `<img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.title)}" loading="lazy">`
-        : `<span>[ ${escapeHtml(article.source)} ]</span>`;
+        : `<img src="images/bm-logo.jpg" alt="BABYMONSTER" loading="lazy" style="object-fit:contain;padding:30px;background:#f5f5f5;">`;
 
     const memberTags = (article.members || ['Group']).map(m =>
         `<span class="member-tag">${escapeHtml(m)}</span>`
@@ -165,14 +165,19 @@ function renderGallery(gallery) {
         return;
     }
 
-    grid.innerHTML = gallery.map(item => `
-        <div class="gallery-item" data-member="${escapeHtml((item.member || 'group').toLowerCase())}">
-            ${item.image
-                ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.caption || '')}" loading="lazy">`
+    grid.innerHTML = gallery.map(item => {
+        const member = (item.member || 'group').toLowerCase();
+        const memberImg = ['ruka','pharita','asa','haram','rora','chiquita','ahyeon'].includes(member)
+            ? `images/${member}.jpg` : '';
+        const imgSrc = item.image || memberImg;
+        return `
+        <div class="gallery-item" data-member="${escapeHtml(member)}">
+            ${imgSrc
+                ? `<img src="${escapeHtml(imgSrc)}" alt="${escapeHtml(item.caption || '')}" loading="lazy">`
                 : `<span>${escapeHtml(item.caption || 'Photo')}</span>`
             }
-        </div>
-    `).join('');
+        </div>`;
+    }).join('');
 }
 
 // === FILTERS ===

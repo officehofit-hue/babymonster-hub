@@ -186,6 +186,13 @@
     { "image": "https://img.youtube.com/vi/YEDJKhvfK0I/maxresdefault.jpg", "caption": "3rd Mini Album CHOOM Teaser", "member": "group" },
     { "image": "https://img.youtube.com/vi/hVMuLgE-uag/maxresdefault.jpg", "caption": "BABYMONSTER — Strike a Pose", "member": "group" },
     { "image": "https://img.youtube.com/vi/CNDrr-5K74w/maxresdefault.jpg", "caption": "Ruka & Ahyeon", "member": "ruka" },
-    { "image": "https://img.youtube.com/vi/SVUdBsqnAD0/maxresdefault.jpg", "caption": "Chiquita — See Me Now", "member": "chiquita" }
+    { "image": "https://img.youtube.com/vi/SVUdBsqnAD0/maxresdefault.jpg", "caption": "Chiquita — See Me Now", "member": "chiquita" },
+    { "image": "images/ruka.jpg", "caption": "Ruka — Profile", "member": "ruka" },
+    { "image": "images/pharita.jpg", "caption": "Pharita — Profile", "member": "pharita" },
+    { "image": "images/asa.jpg", "caption": "Asa — Profile", "member": "asa" },
+    { "image": "images/haram.jpg", "caption": "Haram — Profile", "member": "haram" },
+    { "image": "images/rora.jpg", "caption": "Rora — Profile", "member": "rora" },
+    { "image": "images/chiquita.jpg", "caption": "Chiquita — Profile", "member": "chiquita" },
+    { "image": "images/ahyeon.jpg", "caption": "Ahyeon — Profile", "member": "ahyeon" }
   ]
 }
